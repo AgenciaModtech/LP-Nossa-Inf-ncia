@@ -1,0 +1,37 @@
+.intro {
+  padding: 20px 40px;
+}
+
+.intro__logo {
+  width: 250px;
+}
+
+.intro__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  padding: 40px;
+  width: 90%;
+  position: relative;
+}
+
+.intro__text p:first-of-type {
+  margin: 10px 0 24px 0;
+}
+
+.orange-svg {
+  position: absolute;
+  top: -5px;
+  left: -30px;
+  width: 100%;
+  z-index: -1;
+}
+
+.intro__img {
+  width: 30%;
+}
+
+.intro__btn {
+  bottom: -110px;
+  margin-left: 50px;
+  position: absolute;
+}
