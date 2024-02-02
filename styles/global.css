@@ -1,3 +1,5 @@
+@import url("introduction.css");
+
 :root {
   --e1: #38ab4e;
   --e2: #f28a24;
@@ -10,11 +12,34 @@
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Arimo", sans-serif;
   --btn-font: "Inter", sans-serif;
+
+  --small-radius: 24px;
+  --big-radius: 58px;
 }
 
 * {
   box-sizing: border-box;
   color: var(--c0);
-} 
+}
 
+body {
+  background: url("../img/bg/main.jpg") repeat;
+  margin: 0;
+}
 
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+.redirect-btn {
+  background: var(--e1);
+  border-radius: var(--small-radius);
+  font-family: var(--btn-font);
+  font-weight: bold;
+  padding: 20px 24px;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+}
