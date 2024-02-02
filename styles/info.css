@@ -1,0 +1,85 @@
+.horario__flexivel{
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+
+.info__1{
+    height: 428px;
+    width: 90%;
+    background-color: var(--e2);
+    border-radius: 58px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.crianca {
+    flex: 1; /* Assegura que as imagens das crianças ocupem espaço igual e se ajustem ao conteúdo */
+    width: 20%;
+    
+  }
+
+.crianca-esquerda{
+    background: url('/img/kids/img8.webp') no-repeat center center;
+    background-size: contain; /* Garante que a imagem caiba na div */
+    
+}
+
+.descricao__horario{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+  
+    
+}
+
+.descricao__horario__caixa-vermelha{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 52px;
+    text-align: center;
+    background-color: brown;
+    border-radius: 22px;
+    border: 1px solid black;
+   
+   
+}
+
+
+.descricao__horario h1{
+    font-family: 'Poppins', sans-serif;
+    line-height: 54px;
+    letter-spacing: -1%;
+    font-size: 52px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.descricao__horario__caixa-vermelha p{ 
+        margin-top: 0;
+        margin-bottom: 0;
+      
+}
+
+.descricao__horario__caixa-vermelha p{ 
+    line-height: 72px;
+    letter-spacing: -1%;
+  
+}
+
+.descricao__horario__caixa-vermelha :last-child{
+      font-size: 48px;
+}
+  
+
+
+.crianca-direita{
+    background: url('/img/kids/img9.webp') no-repeat center center;
+    background-size: contain; /* Garante que a imagem caiba na div */
+    
+}
