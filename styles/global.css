@@ -1,0 +1,19 @@
+:root {
+  --e1: #38ab4e;
+  --e2: #f28a24;
+  --e3: #d33733;
+  --e4: #535ba5;
+
+  --c0: #fff;
+  --c1: #000;
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Arimo", sans-serif;
+  --btn-font: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--c0);
+} 
+
