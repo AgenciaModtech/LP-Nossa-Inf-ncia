@@ -1,85 +1,336 @@
-.horario__flexivel{
-    display: flex;
-    justify-content: center; /* Alinha horizontalmente */
+.horario__flexivel {
+  display: flex;
+  align-items: center; /* Alinha horizontalmente */
+  flex-direction: column;
 }
 
+.info__1 {
+  height: 428px;
+  width: 90%;
+  background-color: var(--e2);
+  border-radius: 58px;
+  display: flex;
+  justify-content: space-between;
 
-.info__1{
-    height: 428px;
-    width: 90%;
-    background-color: var(--e2);
-    border-radius: 58px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
+  position: relative;
 }
 
 .crianca {
-    flex: 1; /* Assegura que as imagens das crianças ocupem espaço igual e se ajustem ao conteúdo */
-    width: 20%;
-    
+  flex: 1; /* Assegura que as imagens das crianças ocupem espaço igual e se ajustem ao conteúdo */
+}
+
+.crianca-esquerda {
+  background: url("/img/kids/img8.webp") no-repeat center 100%;
+  background-size: contain; /* Garante que a imagem caiba na div */
+}
+
+.descricao__horario {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente ao centro */
+}
+
+.descricao__horario__caixa-vermelha {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  text-align: center;
+  background-color: brown;
+  border-radius: 22px;
+  margin-top: -50px;
+  padding: 0px 50px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+}
+
+.descricao__horario h1 {
+  font-family: "Poppins", sans-serif;
+  line-height: 54px;
+  letter-spacing: -1%;
+  font-size: 52px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.descricao__horario__caixa-vermelha p {
+  line-height: 72px;
+  letter-spacing: -1%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.descricao__horario img {
+  width: 80%;
+}
+
+.descricao__horario__caixa-vermelha :last-child {
+  font-size: 48px;
+}
+
+.crianca-direita {
+  background: url("/img/kids/img9.webp") no-repeat center 100%;
+  background-size: contain; /* Garante que a imagem caiba na div */
+}
+
+.alimentacao {
+  padding: 60px 60px 0px 60px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.alimentacao h1 {
+  font-family: var(--primary-font);
+  font-size: 63px;
+  font-weight: bold;
+  line-height: 72px;
+  letter-spacing: -1%;
+}
+
+.alimentacao p {
+  font-family: var(--secondary-font);
+  font-size: 44px;
+}
+
+.redirect-btn {
+  background: var(--e1);
+  font-size: 35px;
+  border-radius: 24px;
+  font-family: var(--btn-font);
+  font-weight: bold;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.alimentacao__descricao {
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+.alimentacao__crianca {
+  display: flex;
+  align-items: flex-end;
+}
+
+.alimentacao__crianca img {
+  width: 100%; /* ou uma largura específica */
+  height: auto; /* altura automática para manter as proporções */
+  object-fit: contain;
+}
+
+.turmas {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--e1);
+  width: 100%;
+  align-items: center;
+  border-radius: 24px;
+  background-image:url(/img/ico/icon-info3.svg);
+  
+}
+
+.turmas h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 63px;
+  line-height: 72px;
+  letter-spacing: -1%;
+}
+
+.turmas a {
+  text-align: center;
+  
+}
+
+/* Telas menores que 320px */
+@media only screen and (max-width: 340px) {
+  .info__1 {
+    height: 200px;
   }
 
-.crianca-esquerda{
-    background: url('/img/kids/img8.webp') no-repeat center center;
-    background-size: contain; /* Garante que a imagem caiba na div */
-    
+  .descricao__horario {
+    width: 100%;
+  }
+
+  .crianca {
+    display: none;
+  }
+
+  .descricao__horario h1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .descricao__horario__caixa-vermelha {
+    padding: 5px 5px;
+    width: 90%;
+  }
+
+  .descricao__horario__caixa-vermelha p {
+    font-size: 15px !important;
+    line-height: 20px;
+  }
+
+  .alimentacao {
+    padding: 10px 20px;
+  }
+  .alimentacao__crianca {
+    display: none;
+  }
+
+  .alimentacao__descricao {
+    width: 100%;
+  }
+  .alimentacao__descricao h1 {
+    font-size: 30px;
+  }
+  .alimentacao__descricao p {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .redirect-btn {
+    font-size: 20px;
+  }
 }
 
-.descricao__horario{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    justify-content: center; /* Alinha horizontalmente ao centro */
-  
-    
-}
+/* Para telefones celulares */
+@media only screen and (min-width: 341px) and (max-width: 600px) {
+  .info__1 {
+    height: 200px;
+  }
 
-.descricao__horario__caixa-vermelha{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 52px;
-    text-align: center;
-    background-color: brown;
-    border-radius: 22px;
-    border: 1px solid black;
-   
-   
-}
+  .info__1 h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
 
+  .crianca {
+    display: none;
+  }
+  .descricao__horario {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .descricao__horario__caixa-vermelha {
+    padding: 5px 10px;
+    width: 80%;
+    top: 110%;
+  }
 
-.descricao__horario h1{
-    font-family: 'Poppins', sans-serif;
-    line-height: 54px;
+  .descricao__horario__caixa-vermelha p {
+    font-size: 15px !important;
+    line-height: 15px;
     letter-spacing: -1%;
-    font-size: 52px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
+  }
+
+  .alimentacao {
+    padding: 0px 10px;
+  }
+  .alimentacao__descricao {
+    width: 100%;
+  }
+  .alimentacao__descricao h1 {
+    font-size: 30px;
+  }
+  .alimentacao__descricao p {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .redirect-btn {
+    font-size: 20px;
+  }
+  .alimentacao__crianca {
+    display: none;
+  }
 }
 
-.descricao__horario__caixa-vermelha p{ 
-        margin-top: 0;
-        margin-bottom: 0;
-      
-}
+/* Para tablets em modo retrato e telefones grandes */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .info__1 {
+    height: 300px;
+  }
+  .info__1 {
+    height: 188px;
+  }
+  .descricao__horario h1 {
+    font-size: 18px !important;
+    line-height: 23px;
+  }
 
-.descricao__horario__caixa-vermelha p{ 
-    line-height: 72px;
+  .alimentacao {
+    padding: 0px 30px;
+  }
+
+  .alimentacao__descricao {
+    padding-bottom: 30px;
+  }
+
+  .alimentacao__descricao h1 {
+    font-size: 30px;
+  }
+  .descricao__horario__caixa-vermelha {
+    top: 110%;
+  }
+  .descricao__horario__caixa-vermelha p {
+    font-size: 19px !important;
+    line-height: 21px;
     letter-spacing: -1%;
-  
+  }
+  .alimentacao__descricao p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .redirect-btn {
+    font-size: 20px;
+    font-size: 15px;
+  }
 }
 
-.descricao__horario__caixa-vermelha :last-child{
-      font-size: 48px;
+/* Para tablets em modo paisagem e laptops pequenos */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .info__1 {
+    height: 300px;
+  }
+
+  .descricao__horario h1 {
+    font-size: 28px;
+    line-height: 1.6;
+  }
+  .descricao__horario__caixa-vermelha {
+    padding: 15px 10px;
+    width: 70%;
+  }
+  .descricao__horario__caixa-vermelha p {
+    font-size: 30px !important;
+    line-height: 30px;
+  }
+
+  .alimentacao__descricao h1 {
+    font-size: 30px;
+  }
+  .alimentacao__descricao p {
+    font-size: 30px;
+  }
+  .alimentacao__descricao {
+    font-size: 30px;
+  }
 }
-  
 
+/* Para laptops e desktops */
+@media only screen and (min-width: 1201px) {
+  .descricao__horario__caixa-vermelha p {
+    font-size: 40px !important;
+  }
+}
 
-.crianca-direita{
-    background: url('/img/kids/img9.webp') no-repeat center center;
-    background-size: contain; /* Garante que a imagem caiba na div */
-    
+/* Para telas grandes */
+@media only screen and (min-width: 1801px) {
+  /* Estilos */
 }

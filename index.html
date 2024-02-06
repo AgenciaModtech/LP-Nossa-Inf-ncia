@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/info.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nossa Infância</title>
+    <script defer type="module" src="scripts/script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/global.css">
-  <link rel="stylesheet" href="styles/info.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>Nossa Infância</title>
-</head>
+  <body>
+    <header class="header">
+      <img src="header__img" alt="" />
+    </header>
 
-<body>
-  
-  <header class="header">
-    <img src="header__img" alt="">
-  </header>
+    <section class="horario__flexivel">
+      <div class="info__1">
+        <div class="crianca crianca-esquerda"></div>
+        <div class="descricao__horario">
+          <img
+            src="img/ico/icon-info1.svg"
+            alt="Menina segurando um relógio próximo a sua orelha"
+          />
+          <h1>
+            Nosso horário é flexível para melhor atendermos às necessidades dos
+            pais.
+          </h1>
+          <img
+            src="img/ico/icon-info2.svg"
+            alt="Menino rindo e segurando um relógio"
+          />
+        </div>
 
-  <script type="module" src="scripts/script.js"></script>
-
-  <section class="horario__flexivel">
-    <div class="info__1">
-      <div class="crianca crianca-esquerda">
-        
-      </div>
-      <div class="descricao__horario">
-        <h1>Nosso horário é flexível para melhor atendermos às necessidades dos pais.</h1>
-        
+        <div class="crianca crianca-direita"></div>
         <div class="descricao__horario__caixa-vermelha">
           <p>Funcionamos das 7h às 19h</p>
           <p>Não emendamos feriado</p>
         </div>
-
       </div>
 
-      <div class="crianca crianca-direita">
+      <div class="alimentacao">
+        <div class="alimentacao__descricao">
+          <h1>ALIMENTAÇÃO</h1>
+          <p>
+            <b>Até 6 refeições por dia</b> com alimentação balanceada
+            <b>e supervisão de profissional da nutrição</b>, selecionando
+            alimentos de qualidade e no equilíbrio perfeito para nossos
+            pequenos.
+          </p>
+          <a
+            class="redirect-btn"
+            href="https://wa.me/11945015148?text=Olá!%20Estou%20entrando%20em%20contato%20através%20do%20site."
+            target="_blank"
+            rel="noopener noreferrer"
+            >SAIBA MAIS</a
+          >
+        </div>
 
+        <div class="alimentacao__crianca">
+          <img src="img/kids/img10.webp" alt="Criança comendo melância" />
+        </div>
       </div>
 
-
-      
-
-    </div>
-  </section>
-
-</body>
-
+      <div class="turmas">
+        <h1>TURMAS</h1>
+        <h2>Educação Infantil</h2>
+        <h2>Crianças andantes à 6 anos</h2>
+        <a
+          class="redirect-btn"
+          href="https://wa.me/11945015148?text=Olá!%20Estou%20entrando%20em%20contato%20através%20do%20site."
+          target="_blank"
+          rel="noopener noreferrer"
+          style="background: var(--e2); width: 30%"
+          >SAIBA MAIS</a
+        >
+      </div>
+    </section>
+  </body>
 </html>
