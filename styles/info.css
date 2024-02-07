@@ -134,6 +134,8 @@
   border-radius: 24px;
   background-image: url(/img/ico/icon-info3.svg);
   background-repeat: no-repeat;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .turmas h1 {
@@ -146,6 +148,34 @@
 }
 .turmas a {
   text-align: center;
+}
+
+.turmas h1,
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.turmas h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 67px;
+  line-height: 79px;
+  letter-spacing: 1%;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+}
+
+.redirect-btn-agendar {
+  text-align: center;
+  background: var(--e1) !important;
+  border-radius: 24px;
+  font-family: var(--btn-font);
+  font-weight: bold;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 30px;
 }
 
 /* Telas menores que 320px */
@@ -198,6 +228,25 @@
   .redirect-btn {
     font-size: 20px;
   }
+  .turmas {
+    text-align: center;
+  }
+  .turmas h1 {
+    font-size: 35px;
+
+    line-height: 70px;
+  }
+  .turmas h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .redirect-btn {
+    margin-top: 10px;
+    width: 80% !important;
+  }
+  .redirect-btn-agendar {
+    width: 80% !important;
+  }
 }
 
 /* Para telefones celulares */
@@ -249,6 +298,25 @@
   .alimentacao__crianca {
     display: none;
   }
+  .turmas {
+    text-align: center;
+  }
+  .turmas h1 {
+    font-size: 35px;
+
+    line-height: 70px;
+  }
+  .turmas h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .redirect-btn {
+    margin-top: 10px;
+    width: 80% !important;
+  }
+  .redirect-btn-agendar {
+    width: 80% !important;
+  }
 }
 
 /* Para tablets em modo retrato e telefones grandes */
@@ -291,6 +359,19 @@
     font-size: 20px;
     font-size: 15px;
   }
+  .turmas {
+    text-align: center;
+  }
+
+  .turmas h1 {
+    font-size: 40px;
+  }
+  .turmas h2 {
+    font-size: 35px;
+  }
+  .redirect-btn-agendar {
+    width: 80% !important;
+  }
 }
 
 /* Para tablets em modo paisagem e laptops pequenos */
@@ -305,7 +386,7 @@
   }
   .descricao__horario__caixa-vermelha {
     padding: 15px 10px;
-    width: 50%;
+    width: 70%;
   }
   .descricao__horario__caixa-vermelha p {
     font-size: 30px !important;
@@ -314,6 +395,10 @@
 
   .alimentacao__descricao h1 {
     font-size: 30px;
+  }
+
+  .turmas h2 {
+    font-size: 50px;
   }
   .alimentacao__descricao p {
     font-size: 30px;
