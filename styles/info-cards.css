@@ -34,12 +34,27 @@
   object-fit: contain;
 }
 
-.card__title{
+.card__title {
   margin-bottom: 10px;
   font-size: 30px;
 }
 
 .card__text {
   font-size: 18px;
-  line-height: 1.170;
+  line-height: 1.17;
+}
+
+.info-cards__swipper {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .info-cards__container {
+    display: none;
+  }
+
+  .info-cards__swipper {
+    display: block;
+  }
+
 }
