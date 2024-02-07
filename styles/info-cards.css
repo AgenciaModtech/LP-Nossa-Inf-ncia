@@ -1,0 +1,45 @@
+.info-cards {
+  background: var(--e4) url("../img/bg/bg-info-list.svg") center;
+  background-size: cover;
+  border-radius: var(--big-radius);
+  font-family: var(--secondary-font);
+  text-align: center;
+  padding: 40px 20px 0 20px;
+}
+
+.info-cards__title {
+  font-size: clamp(16px, 4vw, 64px);
+}
+
+.info-cards__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.card {
+  width: 80%;
+}
+
+.card:last-child {
+  grid-column: 2 / 3;
+}
+
+.card__img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+
+.card__title{
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.card__text {
+  font-size: 18px;
+  line-height: 1.170;
+}
