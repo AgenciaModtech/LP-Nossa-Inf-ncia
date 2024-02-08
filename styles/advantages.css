@@ -39,7 +39,7 @@
   background-size: cover;
   background-position: 0 -24vw;
   font-size: clamp(6px, 3.5vw, 64px);
-  min-height: 172vw;
+  min-height: 120vw;
   text-transform: uppercase;
   transform: translateY(-10vh);
   padding-top: 20vw;
@@ -91,7 +91,6 @@
 
 @media (max-width: 768px) {
   .advantages__container {
-    background-size: contain;
     background-position: 0 -15vh;
     transform: translateY(-5vh);
   }

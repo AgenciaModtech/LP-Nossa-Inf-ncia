@@ -1,9 +1,76 @@
-.teachers {
+.qualities {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.qualities .background-shape {
+  height: 150%;
+  transform: translate(-50%, -10%) !important;
+  width: 150%;
+}
+
+.qualities .red-text {
+  font-size: clamp(18px, 3vw, 64px);
+  height: clamp(30px, 12vw, 100px);
+  width: clamp(20px, 40vw, 500px);
+}
+
+.teachers,
+.structures {
   text-transform: uppercase;
 }
 
+.teachers,
+.structures {
+  flex-wrap: wrap;
+  justify-content: space-around !important;
+}
+
+.teachers .item {
+  flex: none;
+}
+
 .teachers .item img {
-  transform: translateY(5px);
+  transform: translateY(3vw);
+  width: 200px !important;
   position: relative;
   z-index: -1;
+}
+
+.teachers li {
+  text-transform: capitalize;
+}
+
+.structures .item:nth-child(odd) img {
+  transform: translateY(2vw);
+  position: relative;
+  z-index: -1;
+}
+
+div.red-text {
+  height: 100% !important;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px;
+  width: fit-content !important;
+}
+
+div.red-text h4 {
+  font-size: clamp(12px, 4vw, 48px);
+}
+
+div.red-text span {
+  text-transform: capitalize;
+  font-size: clamp(12px, 3vw, 32px);
+  display: block;
+}
+
+div.red-text ul li {
+  font-size: clamp(8px, 3vw, 32px);
+}
+
+hr {
+  background-color: var(--c0);
+  height: 3px;
+  width: 100%;
 }

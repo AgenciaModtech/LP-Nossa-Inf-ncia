@@ -1,10 +1,11 @@
 @import url("introduction.css");
 @import url("video.css");
 @import url("advantages.css");
+@import url("info.css");
 @import url("reception.css");
-@import url("testimony.css");
 @import url("info-cards.css");
 @import url("qualities.css");
+@import url("footer.css");
 
 :root {
   --e1: #38ab4e;
@@ -47,6 +48,12 @@ h4 {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .redirect-btn {
   background: var(--e1);
   border-radius: var(--small-radius);
@@ -54,7 +61,9 @@ h4 {
   font-family: var(--btn-font);
   font-weight: bold;
   padding: 20px 30px;
+  text-align: center;
   text-decoration: none;
+  margin: 40px 0;
 }
 
 .flex-container {
@@ -64,7 +73,6 @@ h4 {
 }
 
 .content-background {
-  overflow: hidden;
   position: relative;
 }
 
@@ -95,8 +103,13 @@ h4 {
   font-weight: bold;
   font-size: clamp(6px, 4.8vw, 64px);
   text-align: center;
+  text-transform: uppercase;
   -webkit-text-stroke-width: clamp(1px, 0.3vw, 3px);
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.6);
+}
+
+.center {
+  text-align: center;
 }
 
 @media (max-width: 900px) {

@@ -16,7 +16,7 @@
   flex-direction: column;
   font-family: var(--primary-font);
   padding: 30px 20px 0 30px;
-  font-size: clamp(8px, 3vw, 20px);
+  font-size: clamp(6px, 2.8vw, 20px);
   width: 98%;
 }
 
@@ -29,8 +29,9 @@
 }
 
 .intro__btn {
-  margin-left: 10%;
-  margin-top: auto;
+  margin-bottom: 0 !important;
+  margin-left: 10% !important;
+  margin-top: auto !important;
   padding: 10px 15px !important;
 }
 
@@ -81,5 +82,11 @@
 @media (min-width: 1500px) {
   .intro__text {
     font-size: clamp(8px, 3vw, 35px);
+  }
+}
+
+@media (max-width: 400px) {
+  .intro__btn {
+    font-size: 14px !important;
   }
 }
