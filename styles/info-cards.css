@@ -4,11 +4,11 @@
   border-radius: var(--big-radius);
   font-family: var(--secondary-font);
   text-align: center;
-  padding: 40px 20px 0 20px;
+  padding: 40px 20px;
 }
 
 .info-cards__title {
-  font-size: clamp(16px, 4vw, 64px);
+  font-size: clamp(32px, 4vw, 64px);
 }
 
 .info-cards__container {
@@ -55,6 +55,44 @@
 
   .info-cards__swipper {
     display: block;
+    position: relative;
   }
 
+  .info-cards__title {
+    margin-bottom: 40px;
+  }
+
+  .swiper-slide {
+    align-items: center;
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--c) !important;
+    transform: translateY(-100%);
+  }
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 30px !important;
+}
+
+  .swiper-pagination {
+    transform: translateY(30px) !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: var(--c0) !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .card__title {
+    font-size: 25px;
+  }
+
+  .card__text {
+    font-size: 16px;
+  }
 }

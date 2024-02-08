@@ -1,0 +1,9 @@
+.teachers {
+  text-transform: uppercase;
+}
+
+.teachers .item img {
+  transform: translateY(5px);
+  position: relative;
+  z-index: -1;
+}

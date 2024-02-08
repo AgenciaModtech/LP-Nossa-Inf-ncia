@@ -4,6 +4,7 @@
 @import url("reception.css");
 @import url("testimony.css");
 @import url("info-cards.css");
+@import url("qualities.css");
 
 :root {
   --e1: #38ab4e;
@@ -63,6 +64,7 @@ h4 {
 }
 
 .content-background {
+  overflow: hidden;
   position: relative;
 }
 
@@ -83,7 +85,7 @@ h4 {
   font-size: clamp(12px, 6vw, 64px);
   width: clamp(20px, 45vw, 600px);
   height: clamp(20px, 20vw, 100px);
-  margin: auto;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
