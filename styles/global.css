@@ -19,9 +19,17 @@
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Arimo", sans-serif;
   --btn-font: "Inter", sans-serif;
+  --title-font: "Colored Crayons", sans-serif;
 
   --small-radius: 24px;
   --big-radius: 58px;
+}
+
+@font-face {
+  font-family: "Colored Crayons";
+  src: url("../fonts/title-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {

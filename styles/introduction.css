@@ -15,13 +15,16 @@
   display: flex;
   flex-direction: column;
   font-family: var(--primary-font);
-  padding: 30px 20px 0 30px;
-  font-size: clamp(6px, 2.8vw, 20px);
+  padding: 20px 20px 0 30px;
+  font-size: clamp(6px, 3vw, 22px);
   width: 98%;
 }
 
-.intro__text p:last-of-type {
-  margin-top: 10px;
+.headline {
+  font-size: clamp(12px, 5vw, 75px);
+  font-family: var(--title-font);
+  display: block;
+  margin-bottom: 10px;
 }
 
 .intro-text p {
@@ -29,6 +32,7 @@
 }
 
 .intro__btn {
+  font-size: clamp(12px, 3vw, 26px) !important;
   margin-bottom: 0 !important;
   margin-left: 10% !important;
   margin-top: auto !important;
@@ -42,17 +46,6 @@
 @media (min-width: 480px) {
   .intro__text {
     padding: 40px 20px 0 30px;
-    font-size: clamp(8px, 3.5, 30px);
-  }
-}
-
-@media (min-width: 768px) {
-  .intro__text {
-    padding: 50px 20px 0 40px;
-  }
-
-  .intro__text p:last-of-type {
-    margin-top: 20px;
   }
 }
 
@@ -61,32 +54,14 @@
     padding: 30px 40px;
   }
 
+  .intro__text {
+    padding: 40px 20px 0 60px;
+  }
+
   .intro__img {
     border-radius: var(--big-radius);
     display: block;
     max-height: 715px;
     width: 30%;
-  }
-
-  .intro__text {
-    font-size: clamp(8px, 2vw, 32px);
-  }
-}
-
-@media (min-width: 1200px) {
-  .intro__text {
-    padding: 50px 50px 0 60px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .intro__text {
-    font-size: clamp(8px, 3vw, 35px);
-  }
-}
-
-@media (max-width: 400px) {
-  .intro__btn {
-    font-size: 14px !important;
   }
 }
